@@ -1,0 +1,333 @@
+/* ==========================================================================
+   Web Technology Portfolio - style.css
+   Author: Mansuri Mahamadshaan Sajidbhai (Roll No: 267138)
+   Demonstrates: Element, Class, and ID selectors, Hover effects, Media Query
+   ========================================================================== */
+
+/* 1. Element Selectors */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #f8fafc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 6%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+section {
+  padding: 56px 6%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #1d4ed8;
+  transition: color 0.2s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 6%;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+/* 2. ID Selectors */
+#hero-title {
+  font-size: 2.3rem;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+}
+
+#contact-form {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+#theme-toggle {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #1e3a8a;
+  background-color: #eff6ff;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid #cbd5e1;
+  font-size: 1.4rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 3. Class Selectors */
+.logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  color: #334155;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%);
+  border-radius: 14px;
+  margin-top: 28px;
+  padding: 52px 6%;
+  text-align: left;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.hero-text {
+  font-size: 1.08rem;
+  max-width: 760px;
+  color: #334155;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.primary-btn {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.secondary-btn {
+  background-color: #ffffff;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #475569;
+  margin-bottom: 32px;
+}
+
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.skill-card, .project-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0284c7;
+  margin-bottom: 8px;
+}
+
+.tech-used {
+  font-size: 0.9rem;
+  color: #0f172a;
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.98rem;
+}
+
+.feedback-msg {
+  font-weight: 600;
+  min-height: 22px;
+}
+
+/* 4. Hover Effects */
+.nav-links a:hover {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary-btn:hover {
+  background-color: #1e40af;
+}
+
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.08);
+}
+
+/* 5. Dark Mode Styles (Toggled via script.js) */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark-mode header {
+  background-color: #1e293b;
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .logo,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode #hero-title,
+body.dark-mode .section-title,
+body.dark-mode .tech-used {
+  color: #f8fafc;
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .hero-text,
+body.dark-mode .section-subtitle {
+  color: #cbd5e1;
+}
+
+body.dark-mode .hero-section {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid #334155;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode #contact-form {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+/* 6. Responsive Layout Media Query (Mobile & Tablet Screens) */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  #navbar {
+    width: 100%;
+    display: none;
+  }
+
+  #navbar.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+  }
+
+  #hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}
