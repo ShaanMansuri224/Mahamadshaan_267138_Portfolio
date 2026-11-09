@@ -31,3 +31,4 @@ A responsive, custom-built personal portfolio website showcasing my academic bac
   3. **Client-Side Contact Form Validation** and real-time message character counter (`input` and `submit` events).
 
 ## Portfolio Screenshot
+[portfolio_screenshot.png]
