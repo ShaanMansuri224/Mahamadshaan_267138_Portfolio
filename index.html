@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahamadshaan Mansuri | B.Tech CSE Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo">Mahamadshaan<span>.dev</span></div>
+    <button id="menu-toggle" class="menu-btn" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="navbar">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="btn-theme">Dark Mode</button>
+  </header>
+
+  <section id="about" class="hero-section">
+    <div class="hero-content">
+      <p class="badge">B.Tech CSE | Roll No: 267138 | Division DA</p>
+      <h1 id="hero-title">Hi, I'm Mahamadshaan Sajidbhai Mansuri</h1>
+      <p class="hero-text">
+        I am a 2nd-Year B.Tech Computer Science &amp; Engineering student at JG University, Ahmedabad
+        (Enrollment No: 2601442038). I enjoy building responsive websites, clean user interfaces, and
+        practical web applications using HTML5, CSS3, JavaScript, and Python.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary-btn">View My Projects</a>
+        <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="content-section">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-subtitle">Core technologies and subjects I practise in my B.Tech CSE coursework:</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML5 &amp; Semantic Web</h3>
+        <p>Structured web pages, accessible forms, semantic tags (header, nav, section, footer), and validation.</p>
+      </div>
+      <div class="skill-card">
+        <h3>CSS3 &amp; Responsive Design</h3>
+        <p>Element, class &amp; ID selectors, Flexbox, CSS Grid, hover transitions, and mobile media queries.</p>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript (ES6)</h3>
+        <p>DOM manipulation, event listeners (click, input, submit), interactive themes, and live form checks.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python &amp; Problem Solving</h3>
+        <p>Data structures, algorithms, probability &amp; statistics analysis, and Git/GitHub version control.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Academic and personal web technology builds:</p>
+    <div class="projects-grid">
+      <article class="project-card">
+        <span class="project-tag">Web Application</span>
+        <h3>1. CampusCare Issue &amp; Attendance Tracker</h3>
+        <p>
+          A student utility web interface designed during our Division DA coursework to log lecture
+          attendance counts, compare monthly subject totals, and report campus facility requests cleanly.
+        </p>
+        <p class="tech-used"><strong>Tech Stack:</strong> HTML5, CSS3 Grid, JavaScript Events</p>
+      </article>
+
+      <article class="project-card">
+        <span class="project-tag">Frontend Tool</span>
+        <h3>2. Smart Student Registration &amp; CGPA Calculator</h3>
+        <p>
+          An interactive web form and semester grade calculator with real-time input event listeners,
+          compulsory field checks, and instant GPA percentage conversion for engineering students.
+        </p>
+        <p class="tech-used"><strong>Tech Stack:</strong> Semantic HTML Forms, CSS Flexbox, Vanilla JS</p>
+      </article>
+
+      <article class="project-card">
+        <span class="project-tag">Design Thinking</span>
+        <h3>3. Responsive Personal Portfolio Website</h3>
+        <p>
+          This custom-coded portfolio featuring a persistent dark mode toggle, mobile navigation menu,
+          and client-side contact form validator hosted on GitHub.
+        </p>
+        <p class="tech-used"><strong>Tech Stack:</strong> HTML5, CSS3 Media Queries, JavaScript DOM</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle">Send a message using the validated form below:</p>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="sender-name">Full Name *</label>
+        <input type="text" id="sender-name" name="senderName" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="sender-email">Email Address *</label>
+        <input type="email" id="sender-email" name="senderEmail" placeholder="Enter your email (e.g., name@example.com)" required>
+      </div>
+      <div class="form-group">
+        <label for="sender-message">Your Message * <span id="char-count">(0 characters)</span></label>
+        <textarea id="sender-message" name="senderMessage" rows="4" placeholder="Write at least 10 characters..." required></textarea>
+      </div>
+      <p id="form-feedback" class="feedback-msg"></p>
+      <button type="submit" class="btn primary-btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer id="main-footer">
+    <p>&copy; 2026 Mansuri Mahamadshaan Sajidbhai (Roll No: 267138 | B.Tech CSE, JG University). Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
