@@ -33,4 +33,4 @@ A responsive, custom-built personal portfolio website showcasing my academic bac
 
 ![Portfolio Output Screenshot](https://raw.githubusercontent.com/ShaanMansuri224/Mahamadshaan_267138_Portfolio/main/portfolio_screenshot.png)
 
-Direct Screenshot Link: [View Portfolio Screenshot](https://raw.githubusercontent.com/ShaanMansuri224/Mahamadshaan_267138_Portfolio/main/portfolio_screenshot.png)
+Direct Screenshot Link: [View Portfolio Screenshot](https://raw.githubusercontent.com/ShaanMansuri224/Mahamadshaan_267138_Portfolio/main/portfolio_screenshot.png) 
