@@ -69,5 +69,5 @@ contactForm.addEventListener("submit", function (event) {
   feedbackMsg.style.color = "#16a34a";
   feedbackMsg.textContent = "Thank you, " + nameVal + "! Your message has been validated and sent.";
   contactForm.reset();
-  charCountSpan.textContent = "(0 characters)";
+  charCountSpan.textContent = "(0 characters)"; 
 });
